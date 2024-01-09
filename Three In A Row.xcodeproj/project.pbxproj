@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66804CF82B4C6CA5000530BF /* XO_Tic_Tac_ToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804CF72B4C6CA5000530BF /* XO_Tic_Tac_ToeApp.swift */; };
+		66804CF82B4C6CA5000530BF /* 3_in_a_rowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804CF72B4C6CA5000530BF /* 3_in_a_rowApp.swift */; };
 		66804CFA2B4C6CA5000530BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804CF92B4C6CA5000530BF /* ContentView.swift */; };
 		66804CFC2B4C6CAB000530BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66804CFB2B4C6CAB000530BF /* Assets.xcassets */; };
 		66804CFF2B4C6CAB000530BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66804CFE2B4C6CAB000530BF /* Preview Assets.xcassets */; };
-		66804D092B4C6CAC000530BF /* XO_Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D082B4C6CAC000530BF /* XO_Tic_Tac_ToeTests.swift */; };
-		66804D132B4C6CAC000530BF /* XO_Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D122B4C6CAC000530BF /* XO_Tic_Tac_ToeUITests.swift */; };
-		66804D152B4C6CAC000530BF /* XO_Tic_Tac_ToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D142B4C6CAC000530BF /* XO_Tic_Tac_ToeUITestsLaunchTests.swift */; };
+		66804D092B4C6CAC000530BF /* 3_in_a_rowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D082B4C6CAC000530BF /* 3_in_a_rowTests.swift */; };
+		66804D132B4C6CAC000530BF /* 3_in_a_rowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D122B4C6CAC000530BF /* 3_in_a_rowUITests.swift */; };
+		66804D252B4C70F9000530BF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D242B4C70F9000530BF /* Enums.swift */; };
+		66804D272B4C713E000530BF /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D262B4C713E000530BF /* GameBoard.swift */; };
+		66804D2A2B4C752E000530BF /* TicTacToeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D292B4C752E000530BF /* TicTacToeViewModel.swift */; };
+		66804D2E2B4C7677000530BF /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D2D2B4C7676000530BF /* GameBoardView.swift */; };
+		66804D302B4C771D000530BF /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D2F2B4C771D000530BF /* MarkerView.swift */; };
+		66804D322B4C7C13000530BF /* GameBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D312B4C7C13000530BF /* GameBoardTests.swift */; };
+		66804D342B4C7C94000530BF /* TicTacToeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D332B4C7C94000530BF /* TicTacToeViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		66804CF42B4C6CA5000530BF /* XO Tic-Tac-Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XO Tic-Tac-Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66804CF72B4C6CA5000530BF /* XO_Tic_Tac_ToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XO_Tic_Tac_ToeApp.swift; sourceTree = "<group>"; };
+		66804CF42B4C6CA5000530BF /* Three In A Row.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Three In A Row.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66804CF72B4C6CA5000530BF /* 3_in_a_rowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3_in_a_rowApp.swift; sourceTree = "<group>"; };
 		66804CF92B4C6CA5000530BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		66804CFB2B4C6CAB000530BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66804CFE2B4C6CAB000530BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		66804D042B4C6CAC000530BF /* XO Tic-Tac-ToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XO Tic-Tac-ToeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66804D082B4C6CAC000530BF /* XO_Tic_Tac_ToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XO_Tic_Tac_ToeTests.swift; sourceTree = "<group>"; };
-		66804D0E2B4C6CAC000530BF /* XO Tic-Tac-ToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XO Tic-Tac-ToeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66804D122B4C6CAC000530BF /* XO_Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XO_Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
-		66804D142B4C6CAC000530BF /* XO_Tic_Tac_ToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XO_Tic_Tac_ToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66804D042B4C6CAC000530BF /* Three In A RowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Three In A RowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66804D082B4C6CAC000530BF /* 3_in_a_rowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3_in_a_rowTests.swift; sourceTree = "<group>"; };
+		66804D0E2B4C6CAC000530BF /* Three In A RowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Three In A RowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66804D122B4C6CAC000530BF /* 3_in_a_rowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3_in_a_rowUITests.swift; sourceTree = "<group>"; };
+		66804D242B4C70F9000530BF /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		66804D262B4C713E000530BF /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		66804D292B4C752E000530BF /* TicTacToeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewModel.swift; sourceTree = "<group>"; };
+		66804D2D2B4C7676000530BF /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		66804D2F2B4C771D000530BF /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		66804D312B4C7C13000530BF /* GameBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardTests.swift; sourceTree = "<group>"; };
+		66804D332B4C7C94000530BF /* TicTacToeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +86,10 @@
 		66804CEB2B4C6CA5000530BF = {
 			isa = PBXGroup;
 			children = (
-				66804CF62B4C6CA5000530BF /* XO Tic-Tac-Toe */,
-				66804D072B4C6CAC000530BF /* XO Tic-Tac-ToeTests */,
-				66804D112B4C6CAC000530BF /* XO Tic-Tac-ToeUITests */,
+				66804D2B2B4C765A000530BF /* View */,
+				66804CF62B4C6CA5000530BF /* 3-in-a-row */,
+				66804D072B4C6CAC000530BF /* 3-in-a-rowTests */,
+				66804D112B4C6CAC000530BF /* 3_in_a_rowUITests */,
 				66804CF52B4C6CA5000530BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,22 +97,24 @@
 		66804CF52B4C6CA5000530BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66804CF42B4C6CA5000530BF /* XO Tic-Tac-Toe.app */,
-				66804D042B4C6CAC000530BF /* XO Tic-Tac-ToeTests.xctest */,
-				66804D0E2B4C6CAC000530BF /* XO Tic-Tac-ToeUITests.xctest */,
+				66804CF42B4C6CA5000530BF /* Three In A Row.app */,
+				66804D042B4C6CAC000530BF /* Three In A RowTests.xctest */,
+				66804D0E2B4C6CAC000530BF /* Three In A RowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66804CF62B4C6CA5000530BF /* XO Tic-Tac-Toe */ = {
+		66804CF62B4C6CA5000530BF /* 3-in-a-row */ = {
 			isa = PBXGroup;
 			children = (
-				66804CF72B4C6CA5000530BF /* XO_Tic_Tac_ToeApp.swift */,
+				66804D282B4C7519000530BF /* ViewModel */,
+				66804D232B4C70B5000530BF /* Model */,
+				66804CF72B4C6CA5000530BF /* 3_in_a_rowApp.swift */,
 				66804CF92B4C6CA5000530BF /* ContentView.swift */,
 				66804CFB2B4C6CAB000530BF /* Assets.xcassets */,
 				66804CFD2B4C6CAB000530BF /* Preview Content */,
 			);
-			path = "XO Tic-Tac-Toe";
+			path = "3-in-a-row";
 			sourceTree = "<group>";
 		};
 		66804CFD2B4C6CAB000530BF /* Preview Content */ = {
@@ -110,29 +125,64 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		66804D072B4C6CAC000530BF /* XO Tic-Tac-ToeTests */ = {
+		66804D072B4C6CAC000530BF /* 3-in-a-rowTests */ = {
 			isa = PBXGroup;
 			children = (
-				66804D082B4C6CAC000530BF /* XO_Tic_Tac_ToeTests.swift */,
+				66804D082B4C6CAC000530BF /* 3_in_a_rowTests.swift */,
+				66804D312B4C7C13000530BF /* GameBoardTests.swift */,
+				66804D332B4C7C94000530BF /* TicTacToeViewModelTests.swift */,
 			);
-			path = "XO Tic-Tac-ToeTests";
+			path = "3-in-a-rowTests";
 			sourceTree = "<group>";
 		};
-		66804D112B4C6CAC000530BF /* XO Tic-Tac-ToeUITests */ = {
+		66804D112B4C6CAC000530BF /* 3_in_a_rowUITests */ = {
 			isa = PBXGroup;
 			children = (
-				66804D122B4C6CAC000530BF /* XO_Tic_Tac_ToeUITests.swift */,
-				66804D142B4C6CAC000530BF /* XO_Tic_Tac_ToeUITestsLaunchTests.swift */,
+				66804D122B4C6CAC000530BF /* 3_in_a_rowUITests.swift */,
 			);
-			path = "XO Tic-Tac-ToeUITests";
+			path = 3_in_a_rowUITests;
+			sourceTree = "<group>";
+		};
+		66804D232B4C70B5000530BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66804D242B4C70F9000530BF /* Enums.swift */,
+				66804D262B4C713E000530BF /* GameBoard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66804D282B4C7519000530BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				66804D292B4C752E000530BF /* TicTacToeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		66804D2B2B4C765A000530BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66804D2C2B4C7664000530BF /* Controls */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66804D2C2B4C7664000530BF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				66804D2D2B4C7676000530BF /* GameBoardView.swift */,
+				66804D2F2B4C771D000530BF /* MarkerView.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66804CF32B4C6CA5000530BF /* XO Tic-Tac-Toe */ = {
+		66804CF32B4C6CA5000530BF /* Three In A Row */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66804D182B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "XO Tic-Tac-Toe" */;
+			buildConfigurationList = 66804D182B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "Three In A Row" */;
 			buildPhases = (
 				66804CF02B4C6CA5000530BF /* Sources */,
 				66804CF12B4C6CA5000530BF /* Frameworks */,
@@ -142,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = "XO Tic-Tac-Toe";
+			name = "Three In A Row";
 			productName = "XO Tic-Tac-Toe";
-			productReference = 66804CF42B4C6CA5000530BF /* XO Tic-Tac-Toe.app */;
+			productReference = 66804CF42B4C6CA5000530BF /* Three In A Row.app */;
 			productType = "com.apple.product-type.application";
 		};
-		66804D032B4C6CAC000530BF /* XO Tic-Tac-ToeTests */ = {
+		66804D032B4C6CAC000530BF /* Three In A RowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66804D1B2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "XO Tic-Tac-ToeTests" */;
+			buildConfigurationList = 66804D1B2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "Three In A RowTests" */;
 			buildPhases = (
 				66804D002B4C6CAC000530BF /* Sources */,
 				66804D012B4C6CAC000530BF /* Frameworks */,
@@ -160,14 +210,14 @@
 			dependencies = (
 				66804D062B4C6CAC000530BF /* PBXTargetDependency */,
 			);
-			name = "XO Tic-Tac-ToeTests";
+			name = "Three In A RowTests";
 			productName = "XO Tic-Tac-ToeTests";
-			productReference = 66804D042B4C6CAC000530BF /* XO Tic-Tac-ToeTests.xctest */;
+			productReference = 66804D042B4C6CAC000530BF /* Three In A RowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		66804D0D2B4C6CAC000530BF /* XO Tic-Tac-ToeUITests */ = {
+		66804D0D2B4C6CAC000530BF /* Three In A RowUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66804D1E2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "XO Tic-Tac-ToeUITests" */;
+			buildConfigurationList = 66804D1E2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "Three In A RowUITests" */;
 			buildPhases = (
 				66804D0A2B4C6CAC000530BF /* Sources */,
 				66804D0B2B4C6CAC000530BF /* Frameworks */,
@@ -178,9 +228,9 @@
 			dependencies = (
 				66804D102B4C6CAC000530BF /* PBXTargetDependency */,
 			);
-			name = "XO Tic-Tac-ToeUITests";
+			name = "Three In A RowUITests";
 			productName = "XO Tic-Tac-ToeUITests";
-			productReference = 66804D0E2B4C6CAC000530BF /* XO Tic-Tac-ToeUITests.xctest */;
+			productReference = 66804D0E2B4C6CAC000530BF /* Three In A RowUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66804CEF2B4C6CA5000530BF /* Build configuration list for PBXProject "XO Tic-Tac-Toe" */;
+			buildConfigurationList = 66804CEF2B4C6CA5000530BF /* Build configuration list for PBXProject "Three In A Row" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +269,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66804CF32B4C6CA5000530BF /* XO Tic-Tac-Toe */,
-				66804D032B4C6CAC000530BF /* XO Tic-Tac-ToeTests */,
-				66804D0D2B4C6CAC000530BF /* XO Tic-Tac-ToeUITests */,
+				66804CF32B4C6CA5000530BF /* Three In A Row */,
+				66804D032B4C6CAC000530BF /* Three In A RowTests */,
+				66804D0D2B4C6CAC000530BF /* Three In A RowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,7 +308,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66804CFA2B4C6CA5000530BF /* ContentView.swift in Sources */,
-				66804CF82B4C6CA5000530BF /* XO_Tic_Tac_ToeApp.swift in Sources */,
+				66804D302B4C771D000530BF /* MarkerView.swift in Sources */,
+				66804D272B4C713E000530BF /* GameBoard.swift in Sources */,
+				66804D252B4C70F9000530BF /* Enums.swift in Sources */,
+				66804D2A2B4C752E000530BF /* TicTacToeViewModel.swift in Sources */,
+				66804CF82B4C6CA5000530BF /* 3_in_a_rowApp.swift in Sources */,
+				66804D2E2B4C7677000530BF /* GameBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66804D092B4C6CAC000530BF /* XO_Tic_Tac_ToeTests.swift in Sources */,
+				66804D322B4C7C13000530BF /* GameBoardTests.swift in Sources */,
+				66804D342B4C7C94000530BF /* TicTacToeViewModelTests.swift in Sources */,
+				66804D092B4C6CAC000530BF /* 3_in_a_rowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66804D152B4C6CAC000530BF /* XO_Tic_Tac_ToeUITestsLaunchTests.swift in Sources */,
-				66804D132B4C6CAC000530BF /* XO_Tic_Tac_ToeUITests.swift in Sources */,
+				66804D132B4C6CAC000530BF /* 3_in_a_rowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +340,12 @@
 /* Begin PBXTargetDependency section */
 		66804D062B4C6CAC000530BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66804CF32B4C6CA5000530BF /* XO Tic-Tac-Toe */;
+			target = 66804CF32B4C6CA5000530BF /* Three In A Row */;
 			targetProxy = 66804D052B4C6CAC000530BF /* PBXContainerItemProxy */;
 		};
 		66804D102B4C6CAC000530BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66804CF32B4C6CA5000530BF /* XO Tic-Tac-Toe */;
+			target = 66804CF32B4C6CA5000530BF /* Three In A Row */;
 			targetProxy = 66804D0F2B4C6CAC000530BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -421,7 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"XO Tic-Tac-Toe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"3-in-a-row/Preview Content\"";
 				DEVELOPMENT_TEAM = N7NJ6354TK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -430,12 +486,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.XO-Tic-Tac-Toe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.3-in-a-row";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -450,7 +507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"XO Tic-Tac-Toe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"3-in-a-row/Preview Content\"";
 				DEVELOPMENT_TEAM = N7NJ6354TK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -459,12 +516,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.XO-Tic-Tac-Toe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.3-in-a-row";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -488,7 +546,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XO Tic-Tac-Toe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XO Tic-Tac-Toe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Three In A Row.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Three In A Row";
 			};
 			name = Debug;
 		};
@@ -508,7 +566,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XO Tic-Tac-Toe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XO Tic-Tac-Toe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Three In A Row.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Three In A Row";
 			};
 			name = Release;
 		};
@@ -520,8 +578,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7NJ6354TK;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.XO-Tic-Tac-ToeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.XO-Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -538,8 +597,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7NJ6354TK;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.XO-Tic-Tac-ToeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjtsoftware.XO-Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -551,7 +611,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66804CEF2B4C6CA5000530BF /* Build configuration list for PBXProject "XO Tic-Tac-Toe" */ = {
+		66804CEF2B4C6CA5000530BF /* Build configuration list for PBXProject "Three In A Row" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66804D162B4C6CAC000530BF /* Debug */,
@@ -560,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66804D182B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "XO Tic-Tac-Toe" */ = {
+		66804D182B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "Three In A Row" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66804D192B4C6CAC000530BF /* Debug */,
@@ -569,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66804D1B2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "XO Tic-Tac-ToeTests" */ = {
+		66804D1B2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "Three In A RowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66804D1C2B4C6CAC000530BF /* Debug */,
@@ -578,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66804D1E2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "XO Tic-Tac-ToeUITests" */ = {
+		66804D1E2B4C6CAC000530BF /* Build configuration list for PBXNativeTarget "Three In A RowUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66804D1F2B4C6CAC000530BF /* Debug */,

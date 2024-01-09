@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct XO_Tic_Tac_ToeApp: App {
+struct Three_in_a_rowApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
