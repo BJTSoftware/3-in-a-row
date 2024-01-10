@@ -6,9 +6,9 @@
 //
 
 import XCTest
-@testable import XO_Tic_Tac_Toe
+@testable import Tic_Tac_Toe
 
-final class XO_Tic_Tac_ToeTests: XCTestCase {
+final class Tic_Tac_ToeTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
