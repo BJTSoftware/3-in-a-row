@@ -30,8 +30,24 @@ struct ContentView: View {
                 Spacer()
             }
 
-            // Reset game button
-            Button("Reset Game", action: viewModel.resetGame)
+            Button(action: viewModel.resetGame)
+            {
+                Text("New Game")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                
+            }
+            Button(action: viewModel.clearHistory)
+            {
+                Text("Reset History")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                
+            }
             Spacer()
         }
         .background(Color.black)

@@ -31,7 +31,18 @@ class TicTacToeViewModel: ObservableObject {
     }
 
     func resetGame() {
+        let lastTurn = gameBoard.currentTurn
         gameBoard = GameBoard(rows: 3, columns: 3, consecutiveToWin: 3)
-        gameStatusMessage = "Player X's turn"
+        gameBoard.currentTurn = lastTurn
+        gameStatusMessage = "Player \(lastTurn)'s turn"
+    }
+    
+    func clearHistory() {
+        let lastTurn = gameBoard.currentTurn
+        gameBoard = GameBoard(rows: 3, columns: 3, consecutiveToWin: 3)
+        playerXScore = 0
+        playerOScore = 0
+        gameBoard.currentTurn = lastTurn
+        gameStatusMessage = "Player \(lastTurn)'s turn"
     }
 }

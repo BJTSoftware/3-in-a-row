@@ -8,6 +8,8 @@
 import Foundation
 
 struct GameBoard {
+    
+    var winningIndices: [[Int]] = []
     var board: [Player?]
     var currentTurn: Player
     var status: GameStatus
@@ -29,7 +31,7 @@ struct GameBoard {
             return false
         }
         board[position] = currentTurn
-        checkGameStatus()
+        checkForWinner()
         switchTurn()
         return true
     }
@@ -38,49 +40,25 @@ struct GameBoard {
         currentTurn = currentTurn == .X ? .O : .X
     }
     
-    private func checkForWinner() -> Bool {
-        // Horizontal, Vertical, and Diagonal checks
-        for row in 0..<rows {
-            for col in 0..<columns {
-                if let player = board[row * columns + col] {
-                    // Check horizontally
-                    if col <= columns - consecutiveToWin && checkDirection(row: row, col: col, dRow: 0, dCol: 1, player: player) {
-                        return true
-                    }
-                    // Check vertically
-                    if row <= rows - consecutiveToWin && checkDirection(row: row, col: col, dRow: 1, dCol: 0, player: player) {
-                        return true
-                    }
-                    // Check diagonal (down-right)
-                    if row <= rows - consecutiveToWin && col <= columns - consecutiveToWin && checkDirection(row: row, col: col, dRow: 1, dCol: 1, player: player) {
-                        return true
-                    }
-                    // Check diagonal (up-right)
-                    if row >= consecutiveToWin - 1 && col <= columns - consecutiveToWin && checkDirection(row: row, col: col, dRow: -1, dCol: 1, player: player) {
-                        return true
-                    }
+    private mutating func checkForWinner() {
+        winningIndices.removeAll()
+        let linesToCheck = [
+            [0, 1,2], [3, 4, 5], [6, 7, 8], // Rows
+            [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+            [0, 4, 8], [2, 4, 6] // Diagonals
+        ]
+        for line in linesToCheck {
+            if let player = board[line[0]],
+               player == board[line[1]],
+               player == board[line[2]] {
+                winningIndices.append(line)
+                if winningIndices.count == 2 {
+                    break  // Limit to two winning paths
                 }
             }
         }
-        return false
-    }
-
-    private func checkDirection(row: Int, col: Int, dRow: Int, dCol: Int, player: Player) -> Bool {
-        for i in 0..<consecutiveToWin {
-            if board[(row + i * dRow) * columns + (col + i * dCol)] != player {
-                return false
-            }
-        }
-        return true
-    }
-    
-    private mutating func checkGameStatus() {
-        if(checkForWinner()) {
-            status = .won
-        }
-
-        if !board.contains(nil) {
-            status = .draw
-        }
+        
+        status = winningIndices.isEmpty ? (board.contains(nil) ? .inProgress : .draw) : .won
+        
     }
 }

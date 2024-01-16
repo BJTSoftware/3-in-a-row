@@ -20,6 +20,7 @@
 		66804D302B4C771D000530BF /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D2F2B4C771D000530BF /* MarkerView.swift */; };
 		66804D322B4C7C13000530BF /* GameBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D312B4C7C13000530BF /* GameBoardTests.swift */; };
 		66804D342B4C7C94000530BF /* TicTacToeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66804D332B4C7C94000530BF /* TicTacToeViewModelTests.swift */; };
+		66F7A6C62B57005A008FDF29 /* WinningLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7A6C52B57005A008FDF29 /* WinningLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		66804D2F2B4C771D000530BF /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		66804D312B4C7C13000530BF /* GameBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardTests.swift; sourceTree = "<group>"; };
 		66804D332B4C7C94000530BF /* TicTacToeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewModelTests.swift; sourceTree = "<group>"; };
+		66F7A6C52B57005A008FDF29 /* WinningLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				66804D2D2B4C7676000530BF /* GameBoardView.swift */,
 				66804D2F2B4C771D000530BF /* MarkerView.swift */,
+				66F7A6C52B57005A008FDF29 /* WinningLineView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				66804D272B4C713E000530BF /* GameBoard.swift in Sources */,
 				66804D252B4C70F9000530BF /* Enums.swift in Sources */,
 				66804D2A2B4C752E000530BF /* TicTacToeViewModel.swift in Sources */,
+				66F7A6C62B57005A008FDF29 /* WinningLineView.swift in Sources */,
 				66804CF82B4C6CA5000530BF /* 3_in_a_rowApp.swift in Sources */,
 				66804D2E2B4C7677000530BF /* GameBoardView.swift in Sources */,
 			);
@@ -476,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"3-in-a-row/Preview Content\"";
 				DEVELOPMENT_TEAM = N7NJ6354TK;
 				ENABLE_PREVIEWS = YES;
@@ -508,7 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"3-in-a-row/Preview Content\"";
 				DEVELOPMENT_TEAM = N7NJ6354TK;
 				ENABLE_PREVIEWS = YES;
