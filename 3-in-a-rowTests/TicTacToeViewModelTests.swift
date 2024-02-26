@@ -21,7 +21,7 @@ class TicTacToeViewModelTests: XCTestCase {
     }
 
     func testInitialGameStatus() throws {
-        XCTAssertEqual(viewModel.gameStatusMessage, "Player X's turn")
+        XCTAssertEqual(viewModel.gameStatusMessage, "Player X's turn. \nClick available space.")
     }
 
     func testScoreUpdateOnWin() throws {
@@ -37,7 +37,7 @@ class TicTacToeViewModelTests: XCTestCase {
 
     func testGameReset() throws {
         viewModel.resetGame()
-        XCTAssertEqual(viewModel.gameStatusMessage, "Player X's turn")
+        XCTAssertEqual(viewModel.gameStatusMessage, "Player X's turn. \nClick available space.")
         XCTAssertEqual(viewModel.gameBoard.status, .inProgress)
     }
 }
