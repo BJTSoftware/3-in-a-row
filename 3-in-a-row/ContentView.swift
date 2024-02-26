@@ -19,6 +19,7 @@ struct ContentView: View {
             // Status message and player scores
             Text(viewModel.gameStatusMessage)
                 .foregroundColor(.white)
+                .multilineTextAlignment(.center)
             HStack {
                 Spacer()
                 VStack() {
@@ -30,24 +31,23 @@ struct ContentView: View {
                 Spacer()
             }
 
-            Button(action: viewModel.resetGame)
-            {
-                Text("New Game")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                
-            }
-            Button(action: viewModel.clearHistory)
-            {
-                Text("Reset History")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                
-            }
+
+            // New Game Button with dynamic opacity
+            Button("New Game", action: viewModel.resetGame)
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .opacity(viewModel.moveMade ? 1 : 0) // Opacity changes based on moveMade
+
+            // Reset History Button with dynamic opacity
+            Button("Reset History", action: viewModel.clearHistory)
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .opacity((viewModel.playerOScore > 0 || viewModel.playerXScore > 0) ? 1 : 0) // Opacity changes based on scores
+
             Spacer()
         }
         .background(Color.black)
